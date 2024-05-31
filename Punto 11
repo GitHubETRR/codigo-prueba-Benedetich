@@ -7,7 +7,7 @@ int main()
     printf("Bienvenido al programa que pasa de cm a pies y pulgadas \n");
     printf("Ingrese los CM \n");
     scanf("%f", &Num1);
-    Pie=Num1/30.48;
+    Pie=Num1/30,48;
     Pul=Num1/2,54;
     printf("su numero vale %f pies y %d pulgadas", Pie, Pul);
     return 0;
