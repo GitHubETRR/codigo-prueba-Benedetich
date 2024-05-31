@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int kilos, precio, preciof;
+    printf("Bienvenido al programa para saber cuanto tiene que pagar \n");
+    printf("Ahora ingrese el valor del kilo de la fruta o verdura \n");
+    scanf("%d", &precio);
+    printf("Y para terminar, ingrese cuantos kilos de compró la fruta o verdura \n");
+    scanf("%d", &kilos);
+    preciof=kilos*precio;
+    printf("Su precio final a pagar es de $%d", preciof);
+    return 0;
+}
