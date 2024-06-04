@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float per, area, lado;
+    printf("Bienvenido a este programa para descifrar el perimetro de un cuadrado \n");
+    printf("ingrese la superficie de un cuadrado en m2 \n");
+    scanf("%f", &area);
+    lado=sqrt(area);
+    per=lado*4;
+    printf("Su perimetro es de %fcm", per);
+    return 0;
+}
