@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float lado1, lado2, per, area;
+    printf("Bienvenido, este programa, a partir de los lados de un rectangulo obtienes el perimetro y el area \n");
+    printf("Ahora, ingrese la medida en centimetros del primer lado \n");
+    scanf("%f", &lado1);
+    printf("Ahora, ingrese la medida del un lado diferente en centimetros \n");
+    scanf("%f", &lado2);
+    area=lado1*lado2;
+    per=lado1+lado1+lado2+lado2;
+    printf("Su area es de %fcm y su perimetro es de %fcm", area, per);
+    return 0;
+}
