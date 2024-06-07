@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+    int dia=0, h1=10, m1=1, s1=1, h2=20, m2=2, s2=3, h3, m3, s3;
+    printf("Bienvenido a este programa que realiza la suma de dos horas \n");
+    printf("Ahora, ingrese la primer hora \n");
+    scanf("%d", &h1);
+    printf("Ahora, ingrese el primer minuto \n");
+    scanf("%d", &m1);
+    printf("Ahora, ingrese el primer segundo \n");
+    scanf("%d", &s1);
+    printf("¡Perfecto!, ya tenemos el primer reloj que se compone de %d, %d, %d \n", h1, m1, s1);
+    printf("Ahora, ingrese la segunda hora \n");
+    scanf("%d", &h2);
+    printf("Ahora, ingrese el segundo minuto \n");
+    scanf("%d", &m2);
+    printf("Ahora, ingrese el segundo segundo \n");
+    scanf("%d", &s2);
+    printf("¡Perfecto!, ya tenemos el segundo reloj que se compone de %d, %d, %d \n", h2, m2, s2);
+    h3=h1+h2;
+    m3=m1+m2;
+    s3=s1+s2;
+    while(s3>59)
+    {
+        m3++;
+        s3-=60;
+    }
+    while(m3>59)
+    {
+        h3++;
+        m3-=60;
+    }
+    while(h3>23)
+    {
+        dia++;
+        h3-=24;
+    }
+    printf("Su reloj final se compone de %d días, %d horas, %d minutos y %d segundos", dia, h3, m3, s3);
+    return 0;
+}
