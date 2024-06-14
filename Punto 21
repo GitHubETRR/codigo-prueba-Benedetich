@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int ddmmaaaa, dd, mm, aaaa;
+    printf("Bienvenido a este programa para separar los dias, los meses y los años \n");
+    printf("Ingrese la fecha en el formato DDMMAAAA \n");
+    scanf("%d", &ddmmaaaa);
+    aaaa=ddmmaaaa%10000;
+    mm=(ddmmaaaa/10000)%100;
+    dd=ddmmaaaa/1000000;
+    printf("Días=%d \n", dd);
+    printf("Meses=%d \n", mm);
+    printf("Años=%d \n", aaaa);
+    return 0;
+}
