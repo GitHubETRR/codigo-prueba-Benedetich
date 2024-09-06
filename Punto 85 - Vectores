@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define QUINIELA 10
+
+int main() {
+    int quiniela[QUINIELA];
+    int pos, i;
+    srand(time(NULL));
+    for (i = 0; i < QUINIELA; i++) {
+        quiniela[i] = rand() % 100;
+    }
+    do {
+        printf("Ingrese la posición del número que desea ver (0-9): ");
+        scanf("%d", &pos);
+
+        if (pos < 0 || pos >= QUINIELA) {
+            printf("Posición no válida. Debe ser entre 0 y 9.\n");
+        }
+    } while (pos < 0 || pos >= QUINIELA);
+    printf("El número en la posición %d es: %d\n", pos, quiniela[pos]);
+
+    return 0;
+}
