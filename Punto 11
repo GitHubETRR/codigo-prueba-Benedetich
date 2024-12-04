@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    float cm, pie, pul;
+    printf("Bienvenido al programa que pasa de cm a pies y pulgadas \n");
+    printf("Ingrese los CM \n");
+    scanf("%f", &cm);
+    pie=cm/30.48;
+    pul=cm/2.54;
+    printf("su numero vale %f pies y %f pulgadas", pie, pul);
+    return 0;
+}

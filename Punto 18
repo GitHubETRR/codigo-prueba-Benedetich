@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1415926535897932384626433832795
+
+int main(void){
+    
+    float radio, area;
+    printf("Bienvenido al programa para descubrir el area de un circulo \n");
+    printf("Por favor, ingrese el radio del circulo en centimetros \n");
+    scanf("%f", &radio);
+    area=PI*pow(radio, 2);
+    printf("Su area es de %fcm cuadrados", area);
+    return 0;
+}

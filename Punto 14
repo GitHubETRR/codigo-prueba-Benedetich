@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int ang1, ang2, ang3;
+    printf("Bienvenido al programa que lo ayuda a averiguar el angulo restante de un triangulo \n");
+    printf("Ahora, ingrese ambos angulos conocidos \n");
+    scanf("%d", &ang1);
+    scanf("%d", &ang2);
+    ang3= 180-(ang1+ang2);
+    printf("Perfecto, su angulo restante es de %d°", ang3);
+    return 0;
+}

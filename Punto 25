@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int at, sn, sd, hd;
+    printf("Bienvenido a este programa para calcular su sueldo neto \n");
+    printf("Ahora, ingrese sus horas diarias \n");
+    scanf("%d", &hd);
+    printf("Ahora, ingrese sus años trabajando \n");
+    scanf("%d", &at);
+    sd=hd*4500;
+    sn=sd+((0.02*sd)*at);
+    printf("Su sueldo neto es de $%d diarios", sn);
+    return 0;
+}

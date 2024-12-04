@@ -1,0 +1,16 @@
+#include <stdio.h>
+#define pi 3.1415926535897932384626433832795
+
+int main()
+{
+    float rad, area, vol, h;
+    printf("Bienvenido al programa para determinar el area y el volumen de su cilindro \n");
+    printf("Inserte los centimetros del radio \n");
+    scanf("%f", &rad);
+    printf("¡Perfecto! Ahora, ingrese los centimetros de la altura \n");
+    scanf("%f", &h);
+    area=2*pi*rad*(h+rad);
+    vol=(pi*rad*rad)*h;
+    printf("Su area es de %fcm y su volumen de %fcm", area, vol);
+    return 0;
+}

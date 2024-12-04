@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int años, días;
+    printf("Buenas tardes, bienvenido al programa que te dice cuantos años viviste \n");
+    printf("Ahora, ingrese su edad \n");
+    scanf("%d", &años);
+    días=años*365;
+    printf("Usted ah vivido %d dias", días);
+    return 0;
+}
